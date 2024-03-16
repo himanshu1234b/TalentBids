@@ -1,0 +1,605 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.main-hero-section{
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+justify-content: space-between;
+}
+
+/* Media Query for Mobile Responsive */
+
+@media screen and (max-width: 480px) {
+  .main-hero-section {
+    flex-wrap: wrap;
+    flex-direction: column;
+
+  }
+}
+
+.hero-sec-text-area {
+    width: 500px;
+    height: 130px;
+    margin-top: 5rem;
+
+}
+.hero-sec-text-area h1{
+    font-size: 55px;
+    font-weight: 600;
+    text-align: start;
+    color: white;
+    
+}
+
+.hero-right-section .form h4 {
+  font-size: 30px;
+  font-style: bold;
+  font-weight: 500;
+}
+
+.hero-sec-text-area p{
+    margin-top: 20px;
+    color: white;
+}
+
+/* Hero Hire Developer Button CSS Start  */
+
+.hero-sec-btn-grp button{
+  margin-right: 15px;
+  margin-top: 30px;
+}
+
+.hero-sec-btn-grp a {
+  text-decoration: none;
+  color: white;
+}
+
+.hero-sec-btn-grp .hero-btn-primary{
+  border-radius: .25rem;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 400;
+  padding-left: 25px;
+  padding-right: 25px;
+  color: #fff;
+  -webkit-clip-path: polygon(0 0,0 0,100% 0,100% 0,100% calc(100% - 15px),calc(100% - 15px) 100%,15px 100%,0 100%);
+  clip-path: polygon(0 0,0 0,100% 0,100% 0,100% calc(100% - 15px),calc(100% - 15px) 100%,15px 100%,0 100%);
+  height: 40px;
+  font-size: 0.7rem;
+  line-height: 14px;
+  letter-spacing: 1.2px;
+  transition: .2s .1s;
+  background-image: linear-gradient(90deg,#1c1c1c,#6220fb);
+  border: 0 solid;
+  overflow: hidden;
+}
+/* Hero Hire Developer Button CSS End  */
+
+/* Hero Hire Designer Button CSS Start  */
+.hero-sec-btn-grp .hero-btn-light{
+  border-radius: .25rem;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 400;
+  padding-left: 25px;
+  padding-right: 25px;
+  color: #fff;
+  -webkit-clip-path: polygon(0 0,0 0,100% 0,100% 0,100% calc(100% - 15px),calc(100% - 15px) 100%,15px 100%,0 100%);
+  clip-path: polygon(0 0,0 0,100% 0,100% 0,100% calc(100% - 15px),calc(100% - 15px) 100%,15px 100%,0 100%);
+  height: 40px;
+  font-size: 0.7rem;
+  line-height: 14px;
+  letter-spacing: 1.2px;
+  transition: .2s .1s;
+  /* background-image: linear-gradient(90deg,#1c1c1c,#6220fb); */
+  background-color: #414141;
+  border: 0 solid;
+  overflow: hidden;
+}
+
+.hero-sec-btn-grp .hero-btn-light:hover{
+  background-image: linear-gradient(90deg,#1c1c1c,#6220fb);
+  transition: all, .3s, ease-in-out;
+}
+/* Hero Hire Designer Button CSS End  */
+
+button{
+    width: 165px;
+    color: white;
+    border-radius: 1px solid black;
+    /* margin-top: 35px; */
+}
+
+
+.hero-bg-background {
+    width: 100%;
+    height: 100%;
+  
+    background: #000000;
+    --gap: 5em;
+    --line: 1px;
+    --color: rgba(255, 255, 255, 0.2);
+  
+    background-image: linear-gradient(
+        -90deg,
+        transparent calc(var(--gap) - var(--line)),
+        var(--color) calc(var(--gap) - var(--line) + 1px),
+        var(--color) var(--gap)
+      ),
+      linear-gradient(
+        0deg,
+        transparent calc(var(--gap) - var(--line)),
+        var(--color) calc(var(--gap) - var(--line) + 1px),
+        var(--color) var(--gap)
+      );
+    background-size: var(--gap) var(--gap);
+  }
+  
+  .form-container {
+    width: 400px;
+    background: linear-gradient(#191919, #000000) padding-box,
+                linear-gradient(145deg, transparent 35%,#1c2bff, #0c004d) border-box;
+    border: 2px solid transparent;
+    padding: 32px 24px;
+    font-size: 14px;
+    font-family: inherit;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-sizing: border-box;
+    border-radius: 16px;
+    background-size: 200% 100%;
+    animation: gradient 5s ease infinite;
+  }
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+  
+    50% {
+      background-position: 100% 50%;
+    }
+  
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  option select{
+    font-size: 12pt;
+  }
+  /* .form-container button:active {
+    scale: 0.95;
+  } */
+  
+  .form-container .form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .form-container .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  
+  .form-container .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #717171;
+    font-weight: 600;
+    font-size: 12px;
+  }
+  
+  .form-container .form-group input {
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 8px;
+    color: #fff;
+    font-family: inherit;
+    background-color: transparent;
+    border: 1px solid #414141;
+  }
+  
+  .form-container .form-group textarea {
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 8px;
+    resize: none;
+    color: #fff;
+    height: 60px;
+    border: 1px solid #414141;
+    background-color: transparent;
+    font-family: inherit;
+  }
+  
+  .form-container .form-group input::placeholder {
+    opacity: 0.5;
+  }
+  
+  .form-container .form-group input:focus {
+    outline: none;
+    border-color: #331cff;
+  }
+  
+  .form-container .form-group textarea:focus {
+    outline: none;
+    border-color: #331cff;
+  }
+  
+  .form-container .form-submit-btn {
+    border-radius: .25rem;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 400;
+  padding-left: 25px;
+  padding-right: 25px;
+  color: #fff;
+  -webkit-clip-path: polygon(0 0,0 0,100% 0,100% 0,100% calc(100% - 15px),calc(100% - 15px) 100%,15px 100%,0 100%);
+  clip-path: polygon(0 0,0 0,100% 0,100% 0,100% calc(100% - 15px),calc(100% - 15px) 100%,15px 100%,0 100%);
+  height: 40px;
+  font-size: 0.7rem;
+  line-height: 14px;
+  letter-spacing: 1.2px;
+  /* background-position: right bottom; */
+  transition: all .5s ease-out;
+  transition: .2s .1s;
+  /* background-image: linear-gradient(90deg,#1c1c1c,#6220fb); */
+  background-color: #1c1c1c;
+  border: 0 solid;
+  overflow: hidden;
+  }
+  
+  .form-container .form-submit-btn:hover {
+    cursor: pointer;
+    background-position: left bottom;
+    transition: all .5s ease-in;
+    background-image: linear-gradient(90deg,#1c1c1c,#6220fb);
+    padding-right: 30px;
+    padding-left: 30px;
+    font-weight: 600;
+    }
+  
+  .hero-right-section{
+    margin-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  select{
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 8px;
+    color: #fff;
+    font-family: inherit;
+    background-color: transparent;
+    border: 1px solid #414141;
+    
+  }
+  select option{
+    background-color:#585656;
+    font-size: 14px;
+  }
+  /* Client Trust us Section CSS Started */
+  .client-logo-sec h4{
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 2rem;
+  }
+  .client-logo-sec p{
+    text-align: center;
+    margin-bottom: 2.3rem;
+  }
+  .client-logo-sec .logos-sec{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  .client-logo-sec img{
+    width: 120px;
+    height: 65px;
+    object-fit: contain;
+  }
+  /* Client Trust us Section CSS End */
+
+  /* 4 step remote developer CSS section started */
+
+  .fourstep-devhire-section{
+    margin-top: 6em;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .fourstep-headtext h2::after{
+    content: "";
+    display: block;
+    margin-top: 20px;
+    width: 100%;
+    height: 4px;
+    background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
+
+
+  }
+
+
+  .col-1{
+    width: 45%;
+  }
+  .col-2{
+    width: 50%;
+  }
+
+
+.mainbox-fourstep-hire-sec{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.fourstep-headtext h2{
+
+  font-size: 40px;
+  font-weight: 500;
+
+}
+.box{
+  width: 45%;
+  overflow: hidden;
+  margin-bottom: 2rem;
+  height: 254px;
+  transition: all 0.8s, ease-in;
+
+}
+
+.box:hover{
+  height: auto;
+  transition: all 0.8s, ease-out;
+}
+.box h4{
+  font-size: 21px;
+
+}
+.box p{
+  font-size: 13px;
+  margin-top: 15px;
+}
+
+  /* 4 step remote developer CSS section End */
+
+  /*  Service Feture Card Section Started */
+
+  .main-service-card{
+   background-image: url('https://images.unsplash.com/photo-1650986656202-c8ceceb9b1ae?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+   /* background-image: url('https://images.unsplash.com/photo-1657625947315-03727763fa19?q=80&w=1809&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); */
+   background-repeat: no-repeat;
+   background-size: cover;
+   color: white;
+    height: 275px;
+    border-radius: 7px;
+    margin-top: 4rem;
+  }
+
+  .service-card-headtext{
+    padding: 20px
+  }
+
+  .service-card-headtext h3{
+    font-weight: 550;
+  }
+  .main-service-card .card-row{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .main-service-card .card-row .card-col-1 li{
+    margin-top: 4px;
+    margin-right: 25px;
+
+  }
+  .main-service-card .card-row .card-col-2 li{
+    margin-top: 4px;
+    margin-right: 25px;
+
+  }
+  .main-service-card .card-row .card-col-3 li{
+    margin-top: 4px;
+    margin-right: 25px;
+
+  }
+  .main-service-card .card-row .card-col-4 li{
+    margin-top: 4px;
+    margin-right: 25px;
+
+  }
+
+  /*  Service Feture Card Section end */
+
+
+  /* Tech Feture Section CSS Started  */
+
+  .tech-feture-body{
+    width: auto;
+    height: 500px;
+    background-color: blue;
+    color: white;
+    margin-top: 3rem;
+  }
+
+  .head-tech-sec{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .tech-feture-section .main-text{
+    width: 45%;
+  }
+
+  .main-text h2{
+    padding-top: 5rem;
+    font-weight: 550;
+  }
+
+  .p-text{
+    width: 45%;
+    padding-top: 5rem;
+  }
+
+  .techstack-logos{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 6em;
+  }
+  .tech-logos{
+    margin: auto;
+    }
+
+  .tech-logos img{
+    width: 120px;
+    height: 60px;
+    object-fit: contain;
+
+  }
+  /* Tech Feture Section CSS Started  */
+
+  /* Why hire developers from us CSS section started */
+
+.why-hire-from-us-main{
+  margin-top: 5rem;
+
+}
+
+.why-hire-main-text h3{
+  font-weight: 500;
+}
+
+
+.why-hire-main-text h3::after{
+  content: "";
+  display: block;
+  width: 573px;
+  height: 5px;
+  margin-top: 10px;
+  background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
+}
+.why-hire-row {
+  margin-top: 1.5rem;
+  display: block;
+  display: flex;
+  flex-direction: row;
+  row-gap: 20px;
+
+}
+
+.why-hire-row .hire-card{
+  width: 21%;
+  height: 380px;
+  margin: auto;
+  justify-content: space-between;
+
+}
+.why-hire-row .hire-card span p{
+ /* margin-top: 10px; */
+ margin-bottom: 10px;
+font-size: 30px;
+}
+.why-hire-row .hire-card span p::after{
+  content: "";
+  display: block;
+  width: 38px;
+  height: 3px;
+  background-image: linear-gradient(347deg, blue, navy);
+}
+
+.why-hire-row .hire-card p{
+  margin-top: 1rem;
+  font-size: 13px;
+  text-align: justify;
+
+}
+  /* Why hire developers from us CSS section End */
+
+  /* Are you plaining to hire Dedicated Remote Developer section Started */
+
+  .planing-to-hire-dev{
+    margin-top: 3rem;
+    border: 1px solid;
+    width: 100%;
+    border-radius: 15px;
+    background-repeat: no-repeat;
+    /* background-image: linear-gradient(to right, rgb(134, 239, 172), rgb(59, 130, 246), rgb(147, 51, 234)) */
+    /* background: rgb(131,58,180); */
+   
+    /* background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);     */
+
+    /* background-image: url('https://images.unsplash.com/photo-1588590560438-5e27fe3f6b71?q=80&w=1728&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); */
+    background-image: url('https://images.unsplash.com/photo-1650054155227-b785bfaabcb9?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .planing-to-hire-dev .planing-hire-card{
+    padding: 25px;
+    color: white;
+  }
+.planing-hire-card h4{
+  font-size: 30px;
+  max-width: 850px;;
+}
+  .planing-hire-card p{
+    margin-top: 1rem;
+    max-width: 850px;
+  }
+
+  .planing-to-hire-dev button{
+    border-radius: .25rem;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 400;
+  padding-left: 25px;
+  padding-right: 25px;
+  color: #000000;
+  -webkit-clip-path: polygon(0 0,0 0,100% 0,100% 0,100% calc(100% - 15px),calc(100% - 15px) 100%,15px 100%,0 100%);
+  clip-path: polygon(0 0,0 0,100% 0,100% 0,100% calc(100% - 15px),calc(100% - 15px) 100%,15px 100%,0 100%);
+  height: 40px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  width: auto;
+  line-height: 14px;
+  letter-spacing: 1.2px;
+  /* background-position: right bottom; */
+  transition: all .5s ease-out;
+  transition: .2s .1s;
+  /* background-image: linear-gradient(90deg,#1c1c1c,#6220fb); */
+  background-color: #ffffff;
+  border: 0 solid;
+  overflow: hidden;
+  margin-top: 1rem;
+  }
+
+  .planing-to-hire-dev button:hover{
+    cursor: pointer;
+    background-position: left bottom;
+    transition: all .9s ease-in;
+    background-image: linear-gradient(90deg,#1c1c1c,#6220fb);
+    color: whitesmoke;
+    padding-right: 30px;
+    padding-left: 30px;
+
+  }
+
+  /* Are you plaining to hire Dedicated Remote Developer section End */
