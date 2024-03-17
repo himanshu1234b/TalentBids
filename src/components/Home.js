@@ -1,10 +1,12 @@
 import React from "react";
 import "./Home.css";
 import "./Assests/Adobe Inc. A.svg";
+// import Navbar from "./Navbar";
 
 export default function Home() {
   return (
     <>
+    {/* <Navbar/> */}
       {/* Hero Section Start */}
       <section className="mian-hero-section hero-bg-background">
         <div className="container ">
