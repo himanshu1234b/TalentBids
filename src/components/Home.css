@@ -497,7 +497,7 @@ button{
   background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
 }
 .why-hire-row {
-  margin-top: 1.5rem;
+  margin-top: 1rem;
   display: block;
   display: flex;
   flex-direction: row;
@@ -507,7 +507,7 @@ button{
 
 .why-hire-row .hire-card{
   width: 21%;
-  height: 380px;
+  /* height: 380px; */
   margin: auto;
   justify-content: space-between;
 

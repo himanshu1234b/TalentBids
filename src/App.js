@@ -1,12 +1,14 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 // import Footer from "./components/Footer";
+
 import Home from "./components/Home";
 import About from "./components/About";
 import Navbar from "./components/Navbar";
 import Whatwedo from "./components/Whatwedo";
 import Whyus from "./components/Whyus";
 import Aasdev from "./components/Aasdev";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -22,8 +24,7 @@ function App() {
       <Route path="/aasdev" element={<Aasdev />} />
     </Routes>
       
-      {/* <Home />
-      <Footer /> */}
+      <Footer/>
     </BrowserRouter>
     </>
   );

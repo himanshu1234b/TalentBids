@@ -5,7 +5,7 @@ export default function Navbar() {
   return (
     <>
     <nav className="navbar navbar-expand-lg  bg-primary" data-bs-theme="dark">
-  <div className="container-fluid">
+  <div className="container">
     <Link className="navbar-brand" to="/">TalentBids</Link>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
@@ -49,7 +49,7 @@ export default function Navbar() {
           </ul>
         </li>
       </ul>
-
+      <button type="button" class="btn btn-light" >Contact us <i class="fa-solid fa-arrow-right" ></i> </button>
     </div>
   </div>
 </nav>
