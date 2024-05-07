@@ -4,8 +4,8 @@ import "./Footer.css";
 export default function Footer() {
   return (
     <>
-      <div className="container">
-        <div className="main-footer">
+      <div className=" bg-black text-bg-primary">
+        <div className="container main-footer">
           <div class="full-footer text-start">
             {/* above footer Subscribe section */}
 
@@ -14,15 +14,15 @@ export default function Footer() {
               <button type="button" class="btn btn-info"> Subscribe us </button>
             </div> */}
             <div className="subscribe-email-sec">
-              <div class="container mt-5">
+              <div class="container mt-5 pt-5">
                 <div class="row">
-                  <div class="col">
+                  <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 col-12">
                     <h5>Join Our Newsletter</h5>
                     <p>Be the first to know about our latest updates, exclusive offers, and more.</p>
                   </div>
-                  <div class="col text-end justify-content-between">
+                  <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 col-12">
                     <input type="email" name="email" id="subscribe-email"></input>
-                    <button type="submit" class="btn btn-dark ">Sign up</button>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
                   </div>
                 </div>
               </div>

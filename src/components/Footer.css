@@ -7,6 +7,7 @@ list-style: none;}
 }
 .subscription-box .subs-email{
     width: 185px;
+    height: 35px;
 }
 span{
     font-size: 30px;
@@ -20,5 +21,49 @@ input{
 }
 a{
     text-decoration: none;
-    color: rgb(23, 23, 23);
+} 
+
+.subscribe-email-sec h5{
+    font-size: 30px;
 }
+.subscribe-email-sec p{
+    font-size: 14px;
+}
+
+/* Add responsiveness for mobile devices */
+@media only screen and (max-width: 600px) {
+    input {
+    width: 100%;
+    }
+    .subscribe-email-sec button{
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: start;
+        margin-top: 1rem !important;
+    }   
+
+    }
+    
+    /* Add responsiveness for tablets */
+    @media only screen and (min-width: 600px) and (max-width: 768px) {
+    input {
+    width: 60%;
+    }
+    
+    }
+    
+    /* Add responsiveness for desktops */
+    @media only screen and (min-width: 768px) {
+    input {
+    width: 90%;
+    text-align: left;
+    }
+    .subscribe-email-sec button{
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: start;
+        margin-top: 1rem !important;
+    }
+    }

@@ -5,32 +5,33 @@
     
 }
 
+.main-hero-section{
+display: flex;
+flex-wrap: wrap;
+/* flex-direction: row;  need to remove or changes row to  column */
+justify-content: space-around;
+justify-content: space-between;
+}
+
 /* Media Query for Mobile Responsive */
 
 @media screen and (max-width: 480px) {
- 
-  .main-hero-section .hero-sec-text-area h1{
-    font-size: 13vw;
-  }
+  .main-hero-section {
+    flex-wrap: wrap;
+    flex-direction: column;
 
-}
-
-
-@media screen and (max-width: 850px) { 
-
-  .main-hero-section{
-    justify-content: center;
-    
   }
 }
+
 
 .hero-sec-text-area {
-    width: 100%;
+    width: 500vw;
+    height: 130px;
     margin-top: 5rem;
 
 }
 .hero-sec-text-area h1{
-    font-size: 4em;
+    font-size: 55px;
     font-weight: 600;
     text-align: start;
     color: white;
@@ -38,7 +39,7 @@
 }
 
 .hero-right-section .form h4 {
-  font-size: 30px;
+  font-size: 30rem;
   font-style: bold;
   font-weight: 500;
 }
@@ -51,8 +52,8 @@
 /* Hero Hire Developer Button CSS Start  */
 
 .hero-sec-btn-grp button{
-  margin-right: 15px;
-  margin-top: 30px;
+  margin-right: 15rem;
+  margin-top: 30rem;
 }
 
 .hero-sec-btn-grp a {
@@ -78,6 +79,7 @@
   background-image: linear-gradient(90deg,#1c1c1c,#6220fb);
   border: 0 solid;
   overflow: hidden;
+  display: inline-block;
 }
 /* Hero Hire Developer Button CSS End  */
 
@@ -142,7 +144,7 @@ button{
   }
   
   .form-container {
-    width: 400px;
+    width: 400vw;
     background: linear-gradient(#191919, #000000) padding-box,
                 linear-gradient(145deg, transparent 35%,#1c2bff, #0c004d) border-box;
     border: 2px solid transparent;
@@ -202,7 +204,7 @@ button{
   
   .form-container .form-group input {
     width: 100%;
-    padding: 12px 16px;
+    padding: 12rem 16rem;
     border-radius: 8px;
     color: #fff;
     font-family: inherit;
@@ -212,7 +214,7 @@ button{
   
   .form-container .form-group textarea {
     width: 100%;
-    padding: 12px 16px;
+    padding: 12rem 16rem;
     border-radius: 8px;
     resize: none;
     color: #fff;
@@ -241,8 +243,8 @@ button{
   text-transform: uppercase;
   font-style: normal;
   font-weight: 400;
-  padding-left: 25px;
-  padding-right: 25px;
+  padding-left: 25rem;
+  padding-right: 25rem;
   color: #fff;
   -webkit-clip-path: polygon(0 0,0 0,100% 0,100% 0,100% calc(100% - 15px),calc(100% - 15px) 100%,15px 100%,0 100%);
   clip-path: polygon(0 0,0 0,100% 0,100% 0,100% calc(100% - 15px),calc(100% - 15px) 100%,15px 100%,0 100%);
@@ -302,11 +304,13 @@ button{
   .client-logo-sec .logos-sec{
     margin: auto;
     display: flex;
+    flex-wrap: wrap;
+    display: inline-block;
     justify-content: space-between;
   }
   .client-logo-sec img{
-    max-width: 120px;
-    max-height: 65px;
+    width: 120vw;
+    height: 65vw;
     object-fit: contain;
   }
   /* Client Trust us Section CSS End */
@@ -319,18 +323,127 @@ button{
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
   }
+  @media screen and (max-width:768px){
+    .fourstep-devhire-section{
+      flex-direction: column;
+    }
+  }
+  .fourstep-devhire-section .card {
+    background:#fff;
+    box-shadow: 0px  0px 15px rgba(40, 40, 40, 0.1);
+    border-radius: 10px;
+    padding: 2em;
+    max-width: 40%;
+  }
+  .fourstep-devhire-section .card h3{
+    font-size: 1.9rem;
+    color: #3a3a3a;
+    text-align: left;
+  }
+  .fourstep-devhire-section .card p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 1.3rem;
+    color: #7f7d7d;
+    margin-bottom: 1.5em;
+  }
+  .fourstep-devhire-section .card i{
+    width: 30px;
+    height: 30px;
+    float:left;
+    margin-right: 1em;
+    color: #ffc107;
+  }
+  /* first card */
+  .fourstep-devhire-section .first-card {
+    margin-top: 2em;
+  }
+  .fourstep-devhire-section .second-third-fourth-card {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 1em;
+  }
+@media screen and (max-width: 860px) {
+  .fourstep-devhire-section {
+    flex-direction: column;
+  }
+  .fourstep-devhire-section .card {
+    max-width: 80%;
+    margin: auto;
+    padding: 1em;
+  }
+  .fourstep-devhire-section .card h3,
+  .fourstep-devhire-section .card p {
+    font-weight: bold;
+  }
+  .fourstep-devhire-section .card h3 {
+    font-size: 1.8rem;
+  }
+  .fourstep-devhire-section .card p {
+    font-size: 1.1rem;
+  }
+  .fourstep-devhire-section .card i {
+    display: none;
+  }
+  .fourstep-devhire-section .card::before {
+    content: "";
+    display: block;
+    position: relative;
+    width: calc(100% + 4em);
+    height: 5px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    margin: -2em auto 1em;
+  }
+  .fourstep-devhire-section .first-card::before {
+    margin-bottom: 1em;
+  }
+}
 
   .fourstep-headtext h2::after{
     content: "";
     display: block;
     margin-top: 20px;
-    width: 80%;
+    width: 100%;
     height: 4px;
     background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
 
 
   }
+  .Left-fourstep-hire-sec{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @media screen and (max-width: 980px){
+      .Left-fourstep-hire-sec {
+        flex-direction: column;
+      }
+  }
+  
+  .Right-fourstep-hire-sec{
+    text-align: center;
+    padding: 3.7rem  10rem 3.7rem  10rem ;
+    border-left: 1px solid rgba(0,0,0,.1);
+    img{
+      max-height: 300px;
+      margin-bottom: 2rem;
+    }
+    
+  }
+  @media screen and (max-width: 980px) {
+    .Right-fourstep-hire-sec {
+       padding: 3.7rem  4rem 3.7rem 4rem;
+       border: none;
+       img{
+         max-height: 200px;
+       }
+    }
+  }
+
+
   .col-1{
     width: 45%;
   }
@@ -355,7 +468,7 @@ button{
   width: 45%;
   overflow: hidden;
   margin-bottom: 2rem;
-  height: 254px;
+  height: 254rem;
   transition: all 0.8s, ease-in;
 
 }
@@ -383,7 +496,7 @@ button{
    background-repeat: no-repeat;
    background-size: cover;
    color: white;
-    height: auto;
+    height: 275rem;
     border-radius: 7px;
     margin-top: 4rem;
   }
@@ -402,6 +515,26 @@ button{
     justify-content: space-around;
   }
 
+  .main-service-card .card-row .card-col-1 li{
+    margin-top: 4rem;
+    margin-right: 25rem;
+
+  }
+  .main-service-card .card-row .card-col-2 li{
+    margin-top: 4rem;
+    margin-right: 25rem;
+
+  }
+  .main-service-card .card-row .card-col-3 li{
+    margin-top: 4rem;
+    margin-right: 25rem;
+
+  }
+  .main-service-card .card-row .card-col-4 li{
+    margin-top: 4rem;
+    margin-right: 25rem;
+
+  }
 
   /*  Service Feture Card Section end */
 
@@ -410,17 +543,16 @@ button{
 
   .tech-feture-body{
     width: auto;
-    height: auto;
+    height: 500rem;
     background-color: blue;
     color: white;
     margin-top: 3rem;
-    padding-bottom: 3rem;
   }
 
   .head-tech-sec{
     display: flex;
     flex-wrap: wrap;
-    /* flex-direction: row; */
+    flex-direction: row;
     justify-content: space-between;
   }
 
@@ -441,34 +573,27 @@ button{
   .techstack-logos{
     display: flex;
     flex-wrap: wrap;
-    /* flex-direction: row; */
-    margin-top: 4em;
-    
+    flex-direction: row;
+    margin-top: 6rem;
   }
+  .tech-logos{
+    margin: auto;
+    }
 
   .tech-logos img{
     width: 120px;
     height: 60px;
     object-fit: contain;
-    margin: 1rem;
-  }
 
-  @media screen and (max-width: 420px) {
-
-    .tech-logos img{
-      width: 120px;
-      height: 60px;
-      object-fit: contain;
-      
-    
   }
-}
   /* Tech Feture Section CSS Started  */
 
   /* Why hire developers from us CSS section started */
 
 .why-hire-from-us-main{
   margin-top: 5rem;
+  display: flex;
+  align-items: center;
 
 }
 
@@ -480,28 +605,37 @@ button{
 .why-hire-main-text h3::after{
   content: "";
   display: block;
-  width: 42%;
+  width: 573rem;
   height: 5px;
-  margin-top: 10px;
+  margin-top: 10rem;
   background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
 }
-/* .why-hire-row {
+.why-hire-row {
   margin-top: 1rem;
   display: block;
   display: flex;
   flex-direction: row;
   row-gap: 20px;
 
-} */
+}
+
+.why-hire-row .hire-card{
+  width: 21%;
+  /* height: 380px; */
+  margin: auto;
+  justify-content: space-between;
+
+}
 .why-hire-row .hire-card span p{
+ /* margin-top: 10px; */
  margin-bottom: 10px;
 font-size: 30px;
 }
 .why-hire-row .hire-card span p::after{
   content: "";
   display: block;
-  width: 38px;
-  height: 3px;
+  width: 38rem;
+  height: 3rem;
   background-image: linear-gradient(347deg, blue, navy);
 }
 
@@ -535,7 +669,43 @@ font-size: 30px;
   .planing-to-hire-dev .planing-hire-card{
     padding: 25px;
     color: white;
+    display:  flex;
+    align-items: center;
+    justify-content: space-between;
+    
   }
+
+  @media screen and (max-width: 960px){
+      .planing-to-hire-dev .planing-hire-card {
+        flex-direction: column;
+        
+      }
+      
+  }
+
+  .planing-to-hire-dev .planing-hire-card h4{
+    font-weight: bold;
+    letter-spacing: 2px;
+    line-height: 1.5;
+  }
+
+  .planing-to-hire-dev .planing-hire-card p{
+    max-width: 70%;
+    margin-bottom: 1rem;
+  }
+
+  .planing-to-hire-dev .planing-hire-card button{
+    height: auto;
+    text-align: center;
+    padding: 10px 15px;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .planing-to-hire-dev .planing-hire-card button:hover {
+    box-shadow: inset 0 0 10px rgba(0,0,0,.5);
+  }
+
 .planing-hire-card h4{
   font-size: 30px;
   max-width: 850px;;
@@ -581,5 +751,7 @@ font-size: 30px;
     padding-left: 30px;
 
   }
+
+
 
   /* Are you plaining to hire Dedicated Remote Developer section End */
